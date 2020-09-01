@@ -1,1 +1,37 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+html,
+body {
+  height: 100%;
+  margin: 0px !important;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgray;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  height: 40px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: asset-url('jumbo-copy.jpg');
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+  p {
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  .btn {
+    color: white;
+    background-color: #228B22;
+  }
+  hr {
+    margin-bottom: 1em;
+  }
+}

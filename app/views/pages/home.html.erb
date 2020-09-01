@@ -1,15 +1,21 @@
+<div id="page-content">
+
 <p></p>
 <div  class="container">
   <div class="jumbotron">
-  <h1 class="display-4">Alpha Blog!</h1>
-  <p class="lead">This is a very simple blog application built as part of Mashrur Hossain's Complete
+  <h1 class="display-4">Alpha Blog</h1>
+  <p class="lead">This is a very simple blog application built as part of Mashrur Hossain's<br/> Complete
   Rails Developer course on Udemy</p>
-  <hr class="my-4">
-  <p>It is coded with Rails 6, Ruby and Bootstrap.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Enter</a>
+  <hr class="my-3">
+  <p id="trailer">It is coded with Rails 6, Ruby and Bootstrap.</p>
+  <a class="btn  btn-lg" href="#" role="button">Sign-up</a>
   </div>
 </div>
 
+</div>
 
-<%= link_to 'List of Articles', articles_path %> |
-<%= link_to 'About page', about_path %>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+   <div class="container text-center">
+     <small>Copyright &copy; <%= link_to "Andrew Grablewski", "https://github.com/andrewgrablewski", class:"text-white" %></small>
+   </div>
+ </footer>
