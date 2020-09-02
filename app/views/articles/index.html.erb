@@ -1,4 +1,4 @@
-<div id="page-content">
+
 <h1 class="text-center mt-4">Recent Articles</h1>
 
 <div class="container">
@@ -18,12 +18,11 @@
   </div>
   <div class="card-footer text-muted">
     <small>Created <%= time_ago_in_words(article.created_at) %> ago,
-    Edited <% time_ago_in_words(article.updated_at) %> ago</small>
+    Edited <%= time_ago_in_words(article.updated_at) %> ago</small>
     </div>
   </div>
   </div>
  </div>
 <% end %>
 
-</div>
 </div>
