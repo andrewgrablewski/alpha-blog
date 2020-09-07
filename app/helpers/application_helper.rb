@@ -1,5 +1,5 @@
 module ApplicationHelper
-  
+
 
   def gravatar_for(user, options = {size: 80})
       email_address = user.email.downcase
@@ -9,6 +9,6 @@ module ApplicationHelper
       image_tag(gravatar_url, alt: user.username, class: "shadow rounded d-block mx-auto")
   end
 
-
+  
 
 end
