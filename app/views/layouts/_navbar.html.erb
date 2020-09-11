@@ -18,8 +18,19 @@
       <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
       <% end %>
       <%= link_to "View articles", articles_path, class: "dropdown-item" %>
-      
+
     </div>
+  </li>
+  <li class="nav-item active dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Categories
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <% if logged_in? && current_user.admin?  %>
+      <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
+      <% end %>
+      <%= link_to "View categories", categories_path, class: "dropdown-item" %>
+      </div>
   </li>
   <% if logged_in? %>
   <li class="nav-item active dropdown">
@@ -33,7 +44,7 @@
       <%= link_to "Delete your profile", user_path(current_user),
                class: "dropdown-item text-danger", method: :delete, data: {confirm: "Are you sure?"} %>
       <div class="dropdown-divider"></div>
-      <%= link_to "Logout", logout_path, class: "dropdown-item" %>
+      <%= link_to "Logout", logout_path, class: "dropdown-item", method: :delete  %>
     </div>
   </li>
     </ul>
