@@ -18,7 +18,7 @@ body {
 
 .jumbotron {
   text-align: center;
-  background-image: asset-url('jumbo-copy.jpg');
+  background-image: asset-url('jumbo.jpg');
   background-position: center;
   background-size: cover;
   color: black;
@@ -82,4 +82,8 @@ body {
     .alert-notice {
       background: green;
       color: white;
+    }
+
+    #typekeys {
+      height: 150px;
     }
